@@ -1,0 +1,159 @@
+/*Reset CSS para tirar todas as margens dos elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*Estilização do HEADER - Cabeçalho*/
+header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header>img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu>li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu>li:hover {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: darkred;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-weight: 500;
+}
+
+/*Estilizando o banner*/
+.banner {
+    background-image: url(../img/pizza.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 3px 2px black;
+    box-shadow: 0px 3px 10px lime;
+}
+
+.banner>a {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.384);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+hr {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 0) 100%, rgba(121, 9, 9, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    border: 0;
+    width: 100%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+.p1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sabores {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sabor {
+    background-color: green;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    box-shadow: 0px 3px 10px green;
+    text-align: center;
+    margin: 10px;
+}
+
+.sabor > img{
+    border-radius: 10px;
+}
+
+.preco {
+    background-color: yellow;
+    border: 10px solid yellow;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+.promocoes {
+    overflow: scroll;
+    display: flex;
+    gap: 10px;
+}
+
+.promocoes::-webkit-scrollbar{
+    display: none;
+}
+
+.redes > li > a > img{
+    width: 15px;
+}
+footer{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+   padding: 10px;
+   color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
